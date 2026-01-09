@@ -30,6 +30,3 @@ class HTTPStatus:
         sorted_status_code = dict(sorted(counter.items(), key=lambda item: item[1], reverse=True)[:1])
     
         return sorted_status_code
-
-
-# print(HTTPStatus.count_http_status(logs))
