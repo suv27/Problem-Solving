@@ -1,0 +1,23 @@
+[
+    {"timestamp":"2026-01-05T02:14:23Z","user":"jsmith","ip":"192.168.1.10","status":"FAIL","app":"payments-api"},
+    {"timestamp":"2026-01-05T02:14:25Z","user":"jsmith","ip":"192.168.1.10","status":"FAIL","app":"payments-api"},
+    {"timestamp":"2026-01-05T02:14:30Z","user":"adoe","ip":"10.0.5.22","status":"SUCCESS","app":"auth-service"},
+    {"timestamp":"2026-01-05T02:14:30Z","user":"adoe","ip":"10.0.5.22","status":"SUCCESS","app":"auth-service"},
+    {"timestamp":"2026-01-05T02:14:35Z","user":"mjane","ip":"172.16.0.8","status":"FAIL","app":"mobile-api"},
+    {"timestamp":"2026-01-05T02:14:40Z","user":"mjane","ip":"172.16.0.8","status":"FAIL","app":"mobile-api"},
+    {"timestamp":"2026-01-05T02:14:45Z","user":"mjane","ip":"172.16.0.8","status":"FAIL","app":"mobile-api"},
+    {"timestamp":"2026-01-05T02:14:30Z","user":"adoe","ip":"10.0.5.22","status":"SUCCESS","app":"auth-service"},
+    {"timestamp":"2026-01-05T02:14:50Z","user":"unknown","ip":"192.168.1.10","status":"FAIL","app":"payments-api"},
+    {"timestamp":"2026-01-05T02:14:55Z","user":"adoe","ip":"INVALID_JSON_LINE_SHOULD_BE_SKIPPED"},
+    {"timestamp":"2026-01-05T02:15:00Z","user":"admin","ip":"203.0.113.45","status":"FAIL","app":"admin-console"},
+    {"timestamp":"2026-01-05T02:14:35Z","user":"johndoe","ip":"204.192.1.1","status":"FAIL","app":"web-api"},
+    {"timestamp":"2026-01-05T02:14:30Z","user":"adoe","ip":"10.0.5.22","status":"SUCCESS","app":"auth-service"},
+    {"timestamp":"2026-01-06T02:14:40Z","user":"johndoe","ip":"204.192.1.1","status":"SUCCESS","app":"web-api"},
+    {"timestamp":"2026-01-06T02:14:45Z","user":"johndoe","ip":"204.192.1.1","status":"FAIL","app":"web-api"},
+    {"timestamp":"2026-01-06T02:14:45Z","user":"johndoe","ip":"204.192.1.1","status":"FAIL","app":"web-api"},
+    {"timestamp":"2026-01-06T02:14:45Z","user":"johndoe","ip":"204.192.1.1","status":"SUCCESS","app":"web-api"},
+    {"timestamp":"2026-01-06T02:14:45Z","user":"johndoe","ip":"204.192.1.1","status":"FAIL","app":"web-api"},
+    {"timestamp":"2026-01-05T02:14:45Z","user":"mjane","ip":"172.16.0.8","status":"FAIL","app":"mobile-api"},
+    {"timestamp":"2026-01-05T02:14:45Z","user":"mjane","ip":"172.16.0.8","status":"FAIL","app":"mobile-api"},
+    {"timestamp":"2026-01-05T02:14:45Z","user":"mjane","ip":"172.16.0.0","status":"FAIL","app":"mobile-api"}
+]
