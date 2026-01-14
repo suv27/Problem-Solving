@@ -419,3 +419,16 @@
 
   Task 1:
   Return the top 2 endpoints that produced the most 4xx or 5xx errors.
+
+- [x] **`Unique Suspicious IPs`**
+  
+  Problem
+  You’re given a list of security events.
+  Each event contains an IP and an action.
+  
+  Return a set of IPs that performed any suspicious action.
+  
+  Suspicious actions are:
+  "LOGIN_FAIL"
+  "WAF_BLOCK"
+  "BOT_DETECTED"
