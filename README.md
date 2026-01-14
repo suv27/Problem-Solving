@@ -410,4 +410,12 @@
   ```Python
   SlidingWindow.failed_login_rate_detection(ip_logs) == ['1.1.1.1', '2.2.2.2']
   ```
-  
+
+- [x] **`LOG Parsing Aggregation`**
+
+  Problem
+  You are given application logs.
+  Each log contains an IP, endpoint, and HTTP status.
+
+  Task 1:
+  Return the top 2 endpoints that produced the most 4xx or 5xx errors.
