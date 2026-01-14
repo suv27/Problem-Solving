@@ -432,3 +432,63 @@
   "LOGIN_FAIL"
   "WAF_BLOCK"
   "BOT_DETECTED"
+
+- [x] **``Log Analysis - Practice Problems``**
+
+  Task 1: simulate_grep
+  
+  Problem Statement:
+  Given a list of log strings, return a list of logs that contain a given keyword. This is similar to the UNIX grep command.
+
+  --- Examples:
+  ```Python
+  logs_line = [
+   "ERROR failed login from 1.1.1.1",
+   "INFO user logged in",
+   "WARN suspicious activity detected",
+   "ERROR database connection failed"
+  ]
+  keyword = "ERROR"
+   
+  simulate_grep(logs_line, keyword) == [
+   "ERROR failed login from 1.1.1.1",
+   "ERROR database connection failed"
+  ]
+  ```
+
+  Task 2: detect_burst_errors
+  
+  Problem Statement:
+  Given a list of log strings, detect if there are 3 or more consecutive logs containing a specific keyword. Return True if such a burst exists, else return False.
+
+  --- Examples:
+  ```Python
+  logs_line = [ 
+   "ERROR failed login from 1.1.1.1",
+   "ERROR database connection failed",
+   "ERROR something else",
+   "INFO user logged in"
+  ]
+   
+   keyword = "ERROR"
+   detect_burst_errors(logs_line, keyword) == True
+  ```
+  
+  Task 3: ten_sec_error_logs
+  
+  Problem Statement:
+  Given a list of logs with timestamps and messages, detect if 3 or more logs containing a keyword occur within any 10-second window. Return True if such a burst occurs, otherwise False.
+
+  --- Examples:
+  ```Python
+  logs = [
+   {"timestamp": 1, "message": "ERROR failed login"},
+   {"timestamp": 3, "message": "INFO user logged in"},
+   {"timestamp": 5, "message": "ERROR db connection failed"},
+   {"timestamp": 8, "message": "ERROR something else"},
+   {"timestamp": 15, "message": "ERROR again"}
+  ]
+  
+  ten_sec_error_logs(logs) == True
+  ```
+
