@@ -12,14 +12,7 @@ provided_logs = [
 class TwoPointerSlidingWindow:
     
     def queue_base_sliding_window(logs):
-        '''
-        Docstring for TwoPointerSlidingWindow
-        How to Get it Done:
-        - I will iterate over the list of logs once
-        - check if the status value is ≥ 400
-        - check if current timestamp minus the oldest timestamp in the window is greater than 10, pop and do it again
-        - check if current timestamp minus the top timestamp is greater than 10, pop and do it again
-        '''
+
         suspicious_ips = []
         temp_dict_ts = {}
 
@@ -29,15 +22,18 @@ class TwoPointerSlidingWindow:
             ip = log["ip"]
 
             if status >= 400:
-                while temp_dict_ts[ip] and ts - temp_dict_ts[ip[0]] > 10:
-                    temp_dict_ts[ip[0]].pop
+                if ip not in temp_dict_ts:
+                    temp_dict_ts[ip] = []
+
+                while temp_dict_ts[ip] and (ts - temp_dict_ts[ip][0]) > 10:
+                    temp_dict_ts[ip[0]].pop()
                 
-                temp_dict_ts.append(ip)
+                temp_dict_ts[ip].append(ts)
 
                 if len(temp_dict_ts[ip]) >= 3:
-                    suspicious_ips.append(temp_dict_ts[ip])
+                    suspicious_ips.append(ip)
                     
 
         return suspicious_ips
 
-print(TwoPointerSlidingWindow.queue_base_sliding_window(logs=provided_logs))
+# print(TwoPointerSlidingWindow.queue_base_sliding_window(logs=provided_logs))
