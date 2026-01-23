@@ -492,3 +492,20 @@
   ten_sec_error_logs(logs) == True
   ```
 
+- **``Queue Base Sliding Window``**
+
+  Problem: Suspicious IP Rate Detection
+  
+  You are given a list of application logs.
+  Each log entry contains:
+  ip (string)
+  timestamp (integer, seconds, sorted in ascending order)
+  status (integer HTTP status code)
+
+  Goal:
+  Detect all IP addresses that have:
+     3 or more failed requests (status >= 400)
+     Within any 10-second window
+     Across any endpoint (endpoint does not matter)
+  Return the unique suspicious IPs.
+
